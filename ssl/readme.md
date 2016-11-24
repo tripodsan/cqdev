@@ -1,7 +1,7 @@
 Enable SSL in AEM with _trusted_ self signed certificate
 ========================================================
 The idea is to create our own root ca and then a certificate for it. Afterwards, we trust our
-own root ca system wide, so all other apps with trust our cert.
+own root ca system wide, so all other apps will trust our cert.
 
 In this example we use 'localhost' as CN for the certificate. this works on OSX, but I didn't
 on windows. If you control any DNS, you can also add a A record `localhost.mydomain.com -> 127.0.0.1` to it,
